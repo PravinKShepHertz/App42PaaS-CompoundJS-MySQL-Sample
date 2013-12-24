@@ -15,4 +15,4 @@ fieldset
 fieldset
   legend What do you about this Page :
   .massage-box
-    textarea.massage-textFild(name='des', cols='30', rows='5') Enter your instruction here...
+    != form.input("des", {class: "Personal-input", maxlength: "30", placeholder: 'Enter your instruction here...'})
