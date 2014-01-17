@@ -1,8 +1,40 @@
-<<<<<<< HEAD
-### Welcome to CompoundJS ###
-=======
+
 App42PaaS-CompoundJS-MySQL-Sample
 =================================
 
 Sample CompoundJS App with MySQL for App42 PaaS Platform
->>>>>>> 643d2641b50c27d0cd68bfba3260c33033630c79
+
+## Getting Start with App42
+
+1. Setup infrastructure for required environment
+2. Create service
+3. Deploy a CompoudJS application
+
+### Setup infrastructure for required environment
+
+    $ app42 setupInfra   
+    
+### Create service
+
+    $ app42 createService
+    
+DB Configure(application_root_dir/config/database.js) 
+
+    production: {
+        driver: 'mysql',
+        host: '<VM IP>',
+        port: <VM PORT>,
+        username: '<USER NAME>',
+        password: 'PASSWORD',
+        database: '0'
+    }
+    
+### Deploy a CompoundJS application
+
+    $ app42 deploy
+
+#### Get application details:
+
+    $ app42 appInfo --app AppName    
+    
+Visit your application:
