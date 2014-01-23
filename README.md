@@ -1,4 +1,3 @@
-
 App42PaaS-CompoundJS-MySQL-Sample
 =================================
 
@@ -26,7 +25,7 @@ DB Configure(application_root_dir/config/database.js)
         port: <VM PORT>,
         username: '<USER NAME>',
         password: 'PASSWORD',
-        database: '0'
+        database: 'DATABASE NAME'
     }
     
 ### Deploy a CompoundJS application
